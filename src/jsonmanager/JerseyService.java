@@ -10,9 +10,12 @@ import javax.ws.rs.core.MediaType;
  * @author myrlyn
  *
  */
-@Path("/versions")
+@Path("/")
 public class JerseyService {
-	String[] versions = {"v1"};
+	public static String[] versions = {"v1"};
+	public static String[] environments = {"dev","ftest","ptest","staging","production","entlocal","entremote","eval"};
+	public static String[] roles = {"eras","pdws","amcas","mec","mcat","convey"};
+	public static String hieraDir = "C:/cygwin64/home/jwalker/fake_hiera"; 
 	/**
 	 * 
 	 */
