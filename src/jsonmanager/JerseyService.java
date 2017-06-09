@@ -4,13 +4,15 @@
 package jsonmanager;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 /**
  * @author myrlyn
  *
  */
 @Path("/versions")
 public class JerseyService {
-
+	String[] versions = {"v1"};
 	/**
 	 * 
 	 */
@@ -18,8 +20,9 @@ public class JerseyService {
 		// TODO Auto-generated constructor stub
 	}
 	@GET
-	public String getVersions(){
-		return "v1";
+	@Produces(MediaType.APPLICATION_JSON)
+	public String[] getVersions(){
+		return versions;
 	}
 
 }
