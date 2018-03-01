@@ -5,4 +5,4 @@
  * @author myrlyn
  *
  */
-package jsonmanager;
+package jerseyservice;
